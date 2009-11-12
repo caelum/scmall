@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd $1
+cur=$(git branch | grep '*' | cut -d ' ' -f 2)
+echo "Pulling from $1 @ $cur"
+git checkout master && git pull
+git checkout $cur
+
