@@ -5,6 +5,20 @@
 scmall helps you by syncing all your repositories at once. simply invoke scmall in a base directory
 and all your repositories will be synchronized.
 
+<h2>installing and running</h2>
+
+Just clone it:
+
+<pre>
+git clone
+</pre>
+
+And add to your path by updating your profile file:
+
+<pre>
+PATH=$PATH:/home/users/path/to/your/scmall/application
+</pre>
+
 <h3>current support</h3>
 
 scmall currently supports:
