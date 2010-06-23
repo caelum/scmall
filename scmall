@@ -1,5 +1,3 @@
 #!/bin/bash
 
-find . -name .git -type d | sed 's/.git//' | xargs -n 1 scmall_git
-
-
+find . -name .git -type d | sed 's/\.git$//' | xargs -n 1 scmall_git
