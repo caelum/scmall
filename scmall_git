@@ -1,8 +1,7 @@
 #!/bin/bash
 
 cd $1
-cur=$(git branch | grep '*' | cut -d ' ' -f 2)
-echo "Pulling from $1 @ $cur"
-git checkout master && git pull
-git checkout $cur
-
+remote=$(git remote -v | cut -f2 | sed 's/(fetch)$//' | sed 's/(push)$//' | uniq)
+echo "Pulling from $remote of $1 to master"
+git pull origin master
+echo ""
